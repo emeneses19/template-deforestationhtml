@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable = none">
+    <title>Deforestation</title>
+    <!-- Estilos CSS aqui  -->
+    <style>
+        body {
+            overflow: hidden;
+            background-color: #66a266;
+        }
+        
+        #main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+            animation: fadeIn 4s ease-in;
+        }
+        
+        .card {
+            height: 550px;
+            width: 900px;
+            background-color: white;
+        }
+        
+        h1 {
+            position: absolute;
+            left: 120px;
+            top: 30px;
+            font-size: 70px;
+            font-family: Tahoma;
+        }
+        
+        p,
+        .para1 {
+            position: absolute;
+            top: 200px;
+            left: 150px;
+        }
+        
+        p,
+        .para2 {
+            content: "";
+            top: 300px;
+            right: 16%;
+        }
+        
+        .leaves1 {
+            position: absolute;
+            left: 700px;
+            top: 10px;
+            height: 700px;
+            width: 200px;
+            background-image: url("./img/contact-leaves1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .leaves2 {
+            position: absolute;
+            height: 230px;
+            width: 500px;
+            top: 320px;
+            background-image: url("./img/services-leaves5.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        /* Responsive dising  */
+        
+        @media (min-width: 1199.98px) {}
+        
+        @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+            .card {
+                width: 767px;
+            }
+            .leaves1 {
+                left: 567px
+            }
+            .title h1 {
+                left: 87px
+            }
+            p,
+            .para1 {
+                left: 117px;
+            }
+        }
+        
+        @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+            .card {
+                width: 632px
+            }
+            h1 {
+                left: 64px;
+                font-size: 58px
+            }
+            p,
+            .para1 {
+                left: 98px;
+            }
+            p,
+            .para2 {
+                top: 330px;
+            }
+            .leaves1 {
+                width: 150px;
+                left: 482px;
+            }
+            .leaves2 {
+                height: 189px;
+                top: 361px;
+            }
+        }
+        
+        @media (max-width: 575.98px)and (orientation:portrait) {
+            /* body {
+                background-color: yellow;
+            } */
+            .card {
+                width: 530px;
+                height: 589px;
+            }
+            h1 {
+                left: 64px;
+                font-size: 46px;
+            }
+            p,
+            .para1 {
+                left: 98px;
+                right: 19%;
+                top: 131px;
+            }
+            p,
+            .para2 {
+                top: 299px
+            }
+            .leaves1 {
+                left: 380px;
+                width: 150px;
+            }
+            .leaves2 {
+                height: 189px;
+                top: 400px;
+            }
+        }
+        
+        @media (max-width: 360px)and (orientation:portrait) {
+            /* body {
+                background-color: blueviolet;
+            } */
+            #main {
+                left: 26%;
+                top: 60%;
+                transform: translateX(-24%) translateY(-43%);
+            }
+            .card {
+                width: 332px;
+                height: 869px;
+                /* height: 1429px; */
+            }
+            h1 {
+                left: 26px;
+                font-size: 23px;
+            }
+            .para1 {
+                left: 55px;
+                right: 36%;
+                top: 80px;
+            }
+            .para2 {
+                top: 403px;
+                right: 12%;
+                left: 55px;
+            }
+            .leaves1 {
+                width: 127px;
+                left: 206px;
+            }
+            .leaves2 {
+                top: 681px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="card">
+            <div class="title">
+                <h1>Deforestation </h1>
+            </div>
+            <div class="parrafo">
+                <p class="para1">
+                    deforestation, clearance, or cleaning is the removal of a forest or stand of trees where the land is thereafter converted to a non-forest use. Examples of deforestation include conversion of forestland to farms, ranches, or urban use. The most concentrated
+                    deforestation occurs in tropical rainforests. About 30 percent of Earth's land surface is convered by forests..
+                </p>
+                <p class="para2">
+                    Deforestation occurs for multiple reasons: trees are cut down to be used for building or sold as fuel (sometimes in the form of charcoal or timber), while cleared land is used as pasture for livestock and plantation. The removal of trees without sufficient
+                    reforestattion biosequestration of atmospheric carbon dioxide. Deforestation has also been used in war to deprive the enemy of vital resources and cover for its forces.
+                </p>
+
+            </div>
+            <div class="leaves1"></div>
+            <div class="leaves2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
